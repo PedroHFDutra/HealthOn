@@ -1,1 +1,74 @@
+HealthOn -> Aplicação para cadastro de pacientes 
+Features: Cadastro de Pacientes; Menu de Opções; Cadastro de Alergias Medicamentosas; Consulta de Informações; Preenchimento de Evolução Médica
 
+Algoritmo health_On
+    Procedimento cadastrarPct
+        Var: 
+            nome_pct : Vetor [1..500] de caractere
+            nome_mae : Vetor [1..500] de caractere
+            data_nascimento : Vetor  [1..200] de caractere
+            nome_municipio : Vetor [1..200] de caractere
+            idade, respostaMenu : inteiro
+            peso, altura : real
+
+        Inicio
+
+            Escreval("Vamos iniciar o cadastro de pacientes!")
+            Escreval("Preencha as informações para prosseguirmos com o cadastro...")
+            Escreval("Primeiro, informe seu nome completo:")
+            Leia(nome_pct)
+            Escreval("Informe sua data de nascimento:")
+            Leia(data_nascimento)
+            Escreval("Informe sua idade:")  
+            Leia(idade)
+            Escreval("Informe seu peso:")
+            Leia(peso)
+            Escreval("Agora, informe sua altura:")
+            Leia(altura)
+            Escreval("Informe o nome completo de sua mãe:")
+            Leia(nome_mae)
+            Escreval("Informe o nome do seu município de residência:")
+            Leia(nome_municipio)
+            Escreval("Cadastro Realizado!")
+            //Limpar o prompt (fflush)
+            Escreval("Verifique as informações adicionadas:")
+            Escreval("Nome do paciente:", nome_pct)
+            Escreval("Idade:", idade)
+            Escreval("Nome da Mãe:", nome_mae)
+            Escreval("Altura:", altura "/", "Peso:", peso)
+            Escreval("Data de Nascimento:", data_nascimento "/", "Idade:", idade)
+            Escreval(Município de Residência:", nome_municipio)
+            Escreval("Para confirmar os dados cadastrados, digite: 1 para SIM ou 2 para NÃO")
+            Leia(respostaMenu)
+                Se(respostaMenu = 1) faça
+                    Escreval("Os dados cadastrados foram armazenados com sucesso!")
+                Senão
+                    Se(respostaMenu = 2) faça 
+                        Escreval("Os dados cadastrados não foram armazenados, Cadastro de Paciente não concluído.")
+                Fim_Se
+                    Se (respostaMenu > 2) faça  
+                        Escreval("Opção Inválida!")
+                    Fim_Se
+        Fim_Procedimento
+
+    Procedimento alergia_Medicamentos
+        Var:
+            nome_pct : Vetor [1..500] de caractere
+            nomeDoMedicamento : [1.600] de caractere
+            idade, respostaMenu : inteiro
+            peso, altura : real
+
+        Inicio
+
+            Escreval("Iniciando o cadastro de Alergias Medicamentosas para pacientes")
+            Escreval("Preencha as informações para prosseguirmos com o cadastro...")
+            Escreval("Informe seu nome completo:")
+            Leia("nome_pct")
+            Escreval("Informe sua idade:")
+            Leia(idade)
+            Escreval("Informe seu peso:")
+            Leia(peso)
+            Escreval("Agora, informe sua altura:")
+            Leia(altura)
+            Escreval("Informe o medicamento que você tenha alergia:")
+            Leia(nomeDoMedicamento)
