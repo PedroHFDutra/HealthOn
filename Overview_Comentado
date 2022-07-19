@@ -72,11 +72,39 @@ Algoritmo health_On
             Leia(altura)
             Escreval("Informe o medicamento que você tenha alergia:")
             Leia(nomeDoMedicamento)
-
-
-
-
-
-
-
+            Escreval("Para confirmar o cadastro da alergia, pressione: 1 - para SIM ou 2 - para NÃO")
+            Leia(respostaMenu)
+                Se(respostaMenu = 1) faça
+                    Escreval("Os dados cadastrados foram armazenados com sucesso!")
+                Senão
+                    Se(respostaMenu = 2) faça 
+                        Escreval("Os dados cadastrados não foram armazenados, Cadastro de Alergias Medicamentosas não concluído.")
+                Fim_Se
+                    Se (respostaMenu > 2) faça  
+                        Escreval("Opção Inválida!")
+                    Fim_Se
         Fim_Procedimento
+
+    Procedimento insercaoEvolucao
+        Var:
+            nome_pct : Vetor [1..500] de caractere
+            nomeDoMedicamento : [1.600] de caractere
+            idade, respostaMenu : inteiro
+            peso, altura : real
+
+        Inicio
+
+            Escreval("Deseja evoluir o paciente recém cadastrado?")
+            Escreval("Para prosseguir, pressione: 1 - para SIM ou 2 - para NÃO")
+            Leia(respostaMenu)
+            Se(respostaMenu = 1) faça
+                    Escreval("Vamos prosseguir com a evolução médica...")
+                Senão
+                    Se(respostaMenu = 2) faça 
+                        Escreval("A evolução médica será encerrada.")
+                Fim_Se
+                    Se (respostaMenu > 2) faça  
+                        Escreval("Opção Inválida!")
+                    Fim_Se
+
+                    
