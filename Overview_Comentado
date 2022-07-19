@@ -72,3 +72,11 @@ Algoritmo health_On
             Leia(altura)
             Escreval("Informe o medicamento que você tenha alergia:")
             Leia(nomeDoMedicamento)
+
+
+
+
+
+
+
+        Fim_Procedimento
