@@ -88,7 +88,7 @@ Algoritmo health_On
     Procedimento insercaoEvolucao
         Var:
             nome_pct : Vetor [1..500] de caractere
-            nomeDoMedicamento : [1.600] de caractere
+            evolucao_cadastro : [1.1000] de caractere
             idade, respostaMenu : inteiro
             peso, altura : real
 
@@ -98,13 +98,22 @@ Algoritmo health_On
             Escreval("Para prosseguir, pressione: 1 - para SIM ou 2 - para NÃO")
             Leia(respostaMenu)
             Se(respostaMenu = 1) faça
-                    Escreval("Vamos prosseguir com a evolução médica...")
-                Senão
-                    Se(respostaMenu = 2) faça 
-                        Escreval("A evolução médica será encerrada.")
+                Escreval("Vamos prosseguir com a evolução médica...")
+            Senão
+                Se(respostaMenu = 2) faça 
+                    Escreval("A evolução médica será encerrada.")
                 Fim_Se
                     Se (respostaMenu > 2) faça  
                         Escreval("Opção Inválida!")
                     Fim_Se
+                Escreval("Informe o nome completo do paciente para realizar a evolução")
+                Leia(nome_pct)
+                Escreval("Prosseguiremos com a evolução...")
+                Escreval("Informe a Evolução Médica do paciente", nome_pct)
+                Leia(evolucao_cadastro)
+                Escreval("Evolução Médica cadastrada!")
+
+        Fim_Procedimento
+
 
                     
