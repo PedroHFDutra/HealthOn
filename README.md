@@ -1,6 +1,3 @@
-<div>
-<img align="center" alt="freshprince" src="https://giphy.com/embed/UrK4buqejkhK2NTFw9"> 
-</div>
 # 🩺"HealthOn" - Cadastro de Pacientes 
 <div> 
   <p>
