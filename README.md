@@ -1,4 +1,3 @@
-![](https://github.com/PedroHFDutra/HealthOn/giphy.gif)
 # 🩺"HealthOn" - Cadastro de Pacientes 
 <div> 
   <p>
