@@ -20,6 +20,9 @@
                  <p> 
       - Preenchimento de Evolução Médica
                    </p>
-  
+   <p>
+    <i>(Este projeto parte de uma série de estudos em Linguagem C para o curso de Bacharelado em Engenharia de Software pela UniCesumar)</i>
+    </p>
+    
   </p>
 </div>
